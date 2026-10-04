@@ -122,7 +122,7 @@ public class Library {
     // Medlemmar
 
     /**
-     * Registrerar en ny medlem och tilldelar ett unikt ID.
+     * Registrerar en ny medlem och tilldelar ett unikt ID
      */
 
     public Member registerMember(String name) {
@@ -137,7 +137,7 @@ public class Library {
     }
 
     /**
-     * Utökar medlemsarrayen.
+     * Utökar medlemsarrayen
      */
 
     private void growMembers() {
@@ -145,7 +145,7 @@ public class Library {
     }
 
     /**
-     * Linjär sökning efter medlems-ID.
+     * Linjär sökning efter medlems-ID
      */
 
     public Member findMember(int id) {
@@ -161,8 +161,7 @@ public class Library {
     // Utlåning
 
     /**
-     * Returnerar null vid lyckad utlåning,
-     * annars ett felmeddelande.
+     * Returnerar null vid lyckad utlåning, annars ett felmeddelande
      */
 
     public String borrowBook(String isbn, int memberId) {
@@ -198,8 +197,7 @@ public class Library {
     }
 
     /**
-     * Returnerar null vid lyckad återlämning,
-     * annars ett felmeddelande.
+     * Returnerar null vid lyckad återlämning, annars ett felmeddelande
      */
 
     public String returnBook(String isbn) {
@@ -232,7 +230,7 @@ public class Library {
 
     /**
      * Linjär, skiftlägesokänslig sökning på delar av
-     * titel eller författare. Returnerar matchande index.
+     * titel eller författare. Returnerar matchande index
      */
 
     public int[] searchBooks(String query) {
@@ -266,8 +264,8 @@ public class Library {
     // Sortering: Selection Sort
 
     /**
-     * Returnerar bokindex sorterade efter titel A-Ö.
-     * Originalarrayerna ändras inte.
+     * Returnerar bokindex sorterade efter titel A-Ö
+     * Originalarrayerna ändras inte
      */
 
     public int[] sortedBookIndices() {
@@ -305,8 +303,8 @@ public class Library {
     // Statistik
 
     /**
-     * Returnerar medlemmen med flest aktiva lån.
-     * Returnerar null om ingen medlem har aktiva lån.
+     * Returnerar medlemmen med flest aktiva lån
+     * Returnerar null om ingen medlem har aktiva lån
      */
 
     public Member memberWithMostLoans() {
