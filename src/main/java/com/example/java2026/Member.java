@@ -43,7 +43,7 @@ public class Member {
     }
 
     /**
-     * Medlemmarna får låna fler böcker så länge gränsen inte är nådd.
+     * Medlemmarna får låna fler böcker så länge gränsen inte är nådd
      */
 
     public boolean canBorrowMore() {
