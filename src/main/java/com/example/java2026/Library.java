@@ -19,7 +19,7 @@ public class Library {
 
     /**
      * Lägg till en bok
-     * Returnerar false om bok med samma ISBN redan finns.
+     * Returnerar false om bok med samma ISBN redan finns
      */
     public boolean addBook(Book book) {
         if (book == null) {
@@ -55,7 +55,7 @@ public class Library {
         return true;
     }
 
-    // Utökar bokarrayen och lånestatusarrayen.
+    // Utökar bokarrayen och lånestatusarrayen
 
     private void growBooks() {
         int newSize = books.length * 2;
@@ -91,7 +91,7 @@ public class Library {
         return books[index];
     }
 
-    /** Returnerar text som beskriver bokens lånestatus. */
+    /** Returnerar text som beskriver bokens lånestatus */
 
     public String statusText(int index) {
         checkBookIndex(index);
